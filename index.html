@@ -194,6 +194,14 @@
             box-shadow: var(--shadow-sm);
         }
 
+        .image-source {
+            font-size: 0.8rem;
+            color: #888;
+            text-align: left;
+            margin-top: 0.3rem;
+            line-height: 1.4;
+        }
+
         /* --- Program List Styling --- */
         .program-list {
             list-style: none;
@@ -317,6 +325,20 @@
             text-decoration: underline;
         }
 
+        /* Background intro styling */
+        .background-intro {
+            background-color: #f5f3f3;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: #333;
+            text-align: center;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         /* --- Mobile Responsiveness --- */
         @media (max-width: 768px) {
             h1 { font-size: 2rem; }
@@ -343,11 +365,10 @@
 <body>
     <header class="header-section" style="padding: 2rem 1rem 0;">
         <h1>For the First Time in 43 Years, No Cross-talk! Only 6 Language Programs Left in 2026 Spring Festival Gala</h1>
-          <div class="byline">LI Jiawei, YANG Han, YU Ziqi</div>
+        <div class="byline">LI Jiawei, YANG Han, YU Ziqi</div>
         <p class="lead-paragraph">
             The 2026 Spring Festival Gala boasts impressive data: <span class="highlight">23.063 billion</span> reaches, and <span class="highlight">its viewership share hits a 13-year high</span>.
             However, the language programs, traditionally a highlight of the Gala, face severe challenges. Their number has sharply decreased to <span class="highlight">6</span>, and for the <span class="highlight">first time ever, there is no cross-talk (xiangsheng) program</span>.
-            This article briefly analyzes the historical changes and creative dilemmas behind this phenomenon.
         </p>
     </header>
 
@@ -359,16 +380,15 @@
     <main>
         <!-- Historical Comparison -->
         <section id="historical-comparison">
-            <h2>Historical Comparison: A Cliff-Like Decline in the Number of Language Programs</h2>
+            <h2>Historical Comparison: A 43-Year Tradition Broken</h2>
             
             <div class="flex-row">
                 <div class="flex-col">
                     <div class="chart-card" style="justify-content: center;">
                         <p style="font-size: 1.1rem;">
-                            Since the first Spring Festival Gala in 1983, language programs have always been a focal point for audiences.
-                            However, from the initial <span class="highlight">17</span> programs to <span class="highlight">6</span> in 2026, the number has plummeted by <span class="highlight">64.7%</span>.
-                            More notably, the 2026 Gala <span class="highlight">has no cross-talk program for the first time</span>, marking a significant change in the ecosystem of language performances.
-                            This trend reflects creators' adjustments under multiple pressures, including program innovation, changing audience tastes, and censorship.
+                            Since the first Spring Festival Gala in 1983, cross-talk had never been absent. Generations of cross-talk performers brought laughter to audiences on New Year's Eve. The inaugural Gala in 1983 featured as many as <span class="highlight">17</span> language programs, with <span class="highlight">cross-talk</span> occupying a significant position. For decades thereafter, cross-talk and sketches together formed the <span class="highlight">backbone</span> of the Gala.
+                            However, in 2026, this <span class="highlight">43-year</span> tradition was broken.
+                            Looking at the data, the number of language programs has sharply declined from 17 in 1983 to <span class="highlight">6</span> in 2026, a drop of <span class="highlight">64.7%</span>. The complete absence of cross-talk in 2026 marks a significant change in the ecosystem of language performances.
                         </p>
                     </div>
                 </div>
@@ -383,10 +403,10 @@
 
             <div class="full-width">
                 <div class="chart-card" style="padding: 1.5rem;">
-                    <div class="flourish-embed flourish-chart" data-src="visualisation/27938626">
+                    <div class="flourish-embed flourish-chart" data-src="visualisation/27943803">
                         <script src="https://public.flourish.studio/resources/embed.js"></script>
                         <noscript>
-                            <img src="https://public.flourish.studio/visualisation/27938626/thumbnail" width="100%" alt="visualization" />
+                            <img src="https://public.flourish.studio/visualisation/27943803/thumbnail" width="100%" alt="visualization" />
                         </noscript>
                     </div>
                     <p class="chart-caption">Fig. 1: Historical trends in the number of language programs and cross-talk performances in Spring Festival Galas</p>
@@ -395,19 +415,33 @@
                     </div>
                 </div>
             </div>
+
+            <script>
+            window.addEventListener('load', function() {
+                setTimeout(() => {
+                    const input = document.querySelector('input[placeholder="Enter series to show"]');
+                    if (input) {
+                        input.placeholder = 'Please select series to display';
+                        console.log('✅ Placeholder text replaced with English');
+                    } else {
+                        console.log('❌ Target input not found');
+                    }
+                }, 1000);
+            });
+            </script>
         </section>
 
         <!-- 2026 Program Composition -->
         <section id="current-composition">
-            <h2>2026 Gala Program Composition: Songs and Dances Dominate, Language Programs Seek Change</h2>
+            <h2>This Year's Gala: What Replaced Cross-talk?</h2>
             
             <div class="flex-row">
                 <div class="flex-col">
                     <div class="chart-card">
-                        <div class="flourish-embed flourish-chart" data-src="visualisation/27938603">
+                        <div class="flourish-embed flourish-chart" data-src="visualisation/27943822">
                             <script src="https://public.flourish.studio/resources/embed.js"></script>
                             <noscript>
-                                <img src="https://public.flourish.studio/visualisation/27938603/thumbnail" width="100%" alt="visualization" />
+                                <img src="https://public.flourish.studio/visualisation/27943822/thumbnail" width="100%" alt="visualization" />
                             </noscript>
                         </div>
                         <p class="chart-caption">Fig. 2: Proportion of program types in the 2026 Spring Festival Gala (interactive)</p>
@@ -434,7 +468,10 @@
 
             <div class="chart-card" style="justify-content: center;">
                 <p style="font-size: 1.1rem;">
-                    Among the only 6 language programs, the familiar traditional skits account for <span class="highlight">only half</span>, while cross-talk has been replaced by two emerging forms: 2 <span class="highlight">"comedy sketches"</span> resembling variety show scenarios ("You'll Like It", "Blood Pressure Monitor"), and 1 innovative form <span class="highlight">"dialogical vernacular"</span> ("Whose Dish Is It?") that blends dialect with fast-paced dialogue. The reduction in the duration of language programs and their fragmentation means they can no longer serve as the backbone of the Gala. Meanwhile, a large number of technology showcases and song-and-dance performances dominate this year's Gala, accounting for approximately <span class="highlight">64%</span>. It is evident that the Spring Festival Gala is gradually shifting towards a <span class="highlight">"short, fast, and direct"</span> model, pursuing audiovisual impact and immediate emotional feedback.
+                    Among the only 6 language programs, the familiar traditional skits account for <span class="highlight">only half</span> (3). Cross-talk has been replaced by two emerging forms:
+                    <span class="highlight">Comedy sketches</span> (2): "You'll Like It", "Blood Pressure Monitor" — This format resembles variety show scenarios with faster pacing and richer visual elements.
+                    <span class="highlight">Dialogical vernacular</span> (1): "Whose Dish Is It?" — Blending dialect with fast-paced dialogue, pursuing immediate laughs.
+                    The reduction in the duration of language programs and their fragmentation means they can no longer serve as the backbone of the Gala. Meanwhile, song, dance, and technology showcases dominate approximately <span class="highlight">64%</span> of the stage time. It is evident that the Spring Festival Gala is gradually shifting towards a <span class="highlight">"short, fast, and direct"</span> model, pursuing audiovisual impact and immediate emotional feedback.
                 </p>
             </div>
         </section>
@@ -443,11 +480,11 @@
         <section id="creative-dilemma">
             <h2>Creative Dilemma: Content is King vs. Safety First</h2>
 
-            <div class="background-intro" style="margin-bottom: 2rem; padding: 0 1rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
-        <p style="font-size: 1.1rem; color: #3a3a3a; line-height: 1.7; text-align: justify;">
-            In recent years, the creative environment for language programs at the Spring Festival Gala has become increasingly complex. On one hand, audiences have growing expectations for humor, demanding greater depth and social satire in the content. On the other hand, creators must navigate multiple layers of censorship and public pressure, leading to restrictions on subject matter and expression. This has narrowed the creative space and made it increasingly difficult to produce outstanding works.
-        </p>
-    </div>
+            <div class="background-intro">
+                <p style="font-size: 1.1rem; color: #3a3a3a; line-height: 1.7;">
+                    How to find a balance between audience expectations and creative restrictions? The absence of cross-talk in 2026 may be the ultimate manifestation of this dilemma.
+                </p>
+            </div>
             
             <div class="flex-row">
                 <div class="flex-col">
@@ -513,7 +550,7 @@
                         </div>
                         <p class="chart-caption">Fig. 3: Social Media Hot Topics Word Cloud</p>
                         <div style="text-align: center;">
-                            <a href="wordcloud/副本词云.xlsx" class="data-source-link" target="_blank" rel="noopener noreferrer">Data Source: wordcloud_data.xlsx</a>
+                            <a href="https://1drv.ms/x/c/fa142f2d402f5c3d/IQBx3Liz-sBmQ7yc3w4TrLTJAd8aUNJ5s6rgJOoWVOllGdw?e=8CUdml" class="data-source-link" target="_blank" rel="noopener noreferrer">Data Source: wordcloud_data.xlsx</a>
                         </div>
                         <p style="margin-top: 1rem; font-size: 0.95rem; background: white; padding: 0.8rem; border-radius: 16px;">
                             According to the word cloud, most topics on major platforms focus on "dance," "songs," "robots," and Gala guests, with extremely low discussion of language programs.
@@ -526,9 +563,10 @@
         <!-- Conclusion -->
         <div class="chart-card" style="justify-content: center; max-width: 1300px; margin: 0 auto 3rem;">
             <p style="font-size: 1.5rem;">
-                <span class="highlight">How to find a balance between "seeking safety" and "pursuing depth"?</span>
+                <span class="highlight">Farewell or Transformation?</span>
             </p>
-            <p>"Avoiding public criticism" is becoming an invisible mechanism for screening programs. As a national cultural feast, how the Spring Festival Gala finds a balance between "seeking safety" and "pursuing depth" has become an urgent issue.</p>
+            <p>No cross-talk for the first time in 43 years — is this a temporary absence or a signal of ecological change in language programs?<br>
+            As the Gala pursues "short, fast, and direct" entertainment, can traditional storytelling still hold the audience's attention?</p>
         </div>
     </main>
 
@@ -536,7 +574,6 @@
         <p>
             &copy; 2026 DMC Professional Group
         </p>
-        
     </footer>
 </body>
 </html>
